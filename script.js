@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+
     const newTaskList = document.getElementById('newTaskList');
     const sortButton = document.querySelector('.fa-arrow-down-short-wide');
     let ascendingOrder = true;
     let input = document.querySelector('.clearinp');
     let clear = document.querySelector('.clear');
-
+    
     function createNewTask(taskText) {
         const li = document.createElement('li');
         li.innerHTML = `
@@ -75,4 +75,4 @@ document.addEventListener('DOMContentLoaded', function() {
             inputField.value = '';
         }
     });
-});
+
