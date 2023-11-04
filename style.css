@@ -93,6 +93,8 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
+    max-width: 300px;
+    overflow-y: auto;
 }
 
 ul li {
@@ -107,6 +109,18 @@ ul li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+ul li::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+ul li::-webkit-scrollbar-thumb{
+    background: #ffc107;
+    border-radius: 5px;
+}
+ul li::-webkit-scrollbar-track{
+    background: gray;
+    border-radius: 5px;
+}
 ul li:hover .circle {
     display: flex;
 }
